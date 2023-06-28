@@ -2,7 +2,31 @@
 asp.net mvc5 亂寫一通學習筆記
 
 使用 Visual Studio 2022 + 4.6.1 SDK
-[參考之教學影片](https://www.youtube.com/watch?v=E7Voso411Vs)
+[參考教學影片](https://www.youtube.com/watch?v=E7Voso411Vs)
+
+```
+MVC將應用程式分為三個主要組件：
+
+Model（模型）：模型代表應用程式的數據結構、業務邏輯和數據庫操作。它負責處理數據的讀取、驗證和存儲。
+
+View（視圖）：視圖是用戶界面的呈現層面，負責向用戶顯示數據並處理用戶的輸入。它通常是HTML、CSS和JavaScript的組合。
+
+Controller（控制器）：控制器處理用戶輸入，協調模型和視圖之間的交互。它根據用戶的請求選擇相應的視圖並處理相關的業務邏輯。
+
+在MVC5專案中，你可能會看到以下常見的目錄和文件：
+
+Models（模型）：這個目錄包含代表應用程式數據結構的類別。你可以在這裡定義數據庫實體（例如Entity Framework中的模型類別）和其他邏輯層面的類別。
+
+Views（視圖）：這個目錄包含用於呈現用戶界面的視圖文件，通常使用Razor語法。每個控制器通常都會有對應的視圖文件夾，以組織相關的視圖。
+
+Controllers（控制器）：這個目錄包含控制器類別，它們處理用戶的請求並協調模型和視圖之間的交互。每個控制器類別都是一個繼承自Controller類別的類別，並包含不同的動作方法（Action）。
+
+App_Start：這個目錄包含一些應用程式啟動時的設定文件，例如路由配置（RouteConfig.cs）和範本引擎配置（BundleConfig.cs）。
+
+App_Data：這個目錄通常用於存儲應用程式所需的數據庫文件，例如SQLite或SQL Server Compact Edition。
+
+App_Themes：這個目錄包含應用程式的主題文件，用於自訂應用程式的外觀。
+```
 
 - **<.NET 延伸模組(線上online搜尋)>** visual studio productivity power tools  (productivity power tools 20XX之類的) Visual Studio開發者必裝套件
 - **<.NET 延伸模組(線上online搜尋)> Web Essentials** 增強 Visual Studio 在 Web、CSS、JavaScript開發上的方便性 !!!((暫時還沒有 Web Essentials 2022))
